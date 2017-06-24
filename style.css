@@ -18,9 +18,15 @@ body {
     border-color: #212121 !important;
 }
 
-.btn-primary {
+/*.btn-primary {
     background-color: #FF4081 !important;
     border-color: #FF4081 !important;
+}*/
+
+.carousel-caption p>a.fucsia{
+  background-color: #FF4081;
+  border-color: #FF4081;
+  color:white;
 }
 
 div#map{
