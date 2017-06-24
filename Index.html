@@ -1,68 +1,54 @@
 <!DOCTYPE html>
 <html lang="">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-    <script src="../Html/interact.js"></script>
-    <title>Nearans: Espacios alternativos para difundir la cultura en todo el mundo</title>
-    
-    <!-- Latest compiled and minified CSS -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="style.css">
+<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+<title>Nearans: Espacios alternativos para difundir la cultura en todo el mundo</title>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
-<!-- Optional theme -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-
-<!-- Latest compiled and minified JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  
-  <!-- Google Maps integration -->
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
-
+<link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
- 
+
  <!-- Barra de navegación -->
   <nav class="navbar navbar-inverse">
   <div class="container-fluid">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                            
+
       </button>
       <a class="navbar-brand" href="#">Nearans</a>
     </div>
-    
+
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right" data-toggle="modal" data-target="#myModal">
         <li><a href="#"><span class="glyphicon glyphicon-user"></span></a></li>
       </ul>
     </div>
   </div>
-  
+
   <!-- Modal -->
   <div class="modal fade" id="myModal" role="dialog">
     <div class="modal-dialog">
-    
+
       <!-- Modal content-->
       <div class="modal-content">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4 class="modal-title">Modal Header</h4>
+          <h4 class="modal-title">Ahora puedes logearte...</h4>
         </div>
         <div class="modal-body">
-          <p>Some text in the modal.</p>
+          <h1>Facebook login</h1>
+          <a href="#" id="login" class="btn btn-primary">Iniciar sesión con Facebbok</a>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
         </div>
       </div>
-      
+
     </div>
   </div>
 </nav>
@@ -83,7 +69,7 @@
           <h1>Hello, world!</h1>
           <p>...</p>
           <p><a class="btn btn-primary btn-lg" href="#" role="button">Conviértete en embajador</a></p>
-        </div>      
+        </div>
       </div>
 
       <div class="item">
@@ -91,7 +77,7 @@
         <div class="carousel-caption">
           <h3>More Sell $</h3>
           <p>Lorem ipsum...</p>
-        </div>      
+        </div>
       </div>
     </div>
 
@@ -105,8 +91,8 @@
       <span class="sr-only">Next</span>
     </a>
 </div>
-   
-   
+
+
     <!-- main -->
     <div class="container">
 
@@ -118,7 +104,7 @@
   <div class="tab-content">
     <div id="home" class="tab-pane fade in active">
       <h3>Los más rentados</h3>
-      
+
       <div class="row">
           <div class="container">
               <div class="col-md-12">
@@ -158,14 +144,14 @@
               </div>
           </div>
       </div>
-    
-      
+
+
    <!-- ESPACIOS -->
     </div>
     <div id="menu1" class="tab-pane fade">
       <h3>Espacios</h3>
       <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-      
+
             <div class="row">
           <div class="container">
               <div class="col-md-8">
@@ -203,25 +189,36 @@
     </div>
   </div>
               </div>
-              
+
     <div class="col-md-2">
         <!-- Google Maps Integration -->
         <div id="map" style="width:400px;height:400px;background:yellow"></div>
     </div>
-                
+
           </div>
-          
+
 
       </div>
-    
+
 
     </div>
   </div>
 </div>
-    
+
      <!-- footer -->
     <footer class="container-fluid text-center">
       <p>Footer Text</p>
     </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="js/app.js" charset="utf-8"></script>
+    <script type="text/javascript">
+  (function(d, s, id){
+   var js, fjs = d.getElementsByTagName(s)[0];
+   if (d.getElementById(id)) {return;}
+   js = d.createElement(s); js.id = id;
+   js.src = "//connect.facebook.net/en_US/sdk.js";
+   fjs.parentNode.insertBefore(js, fjs);
+ }(document, 'script', 'facebook-jssdk'));
+  </script>
 </body>
 </html>
