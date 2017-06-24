@@ -1,14 +1,19 @@
 <!DOCTYPE html>
 <html lang="">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" type="text/css" href="style.css">
-<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-<title>Nearans: Espacios alternativos para difundir la cultura en todo el mundo</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <title>Nearans: Espacios alternativos para difundir la cultura en todo el mundo</title>
+
+    <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-<link rel="stylesheet" href="css/main.css">
+
+<!-- Latest compiled and minified JavaScript -->
 </head>
 
 <body>
@@ -17,38 +22,12 @@
   <nav class="navbar navbar-inverse">
   <div class="container-fluid">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-
-      </button>
       <a class="navbar-brand" href="#">Nearans</a>
     </div>
-
     <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav navbar-right" data-toggle="modal" data-target="#myModal">
+      <ul class="nav navbar-nav navbar-right">
         <li><a href="#"><span class="glyphicon glyphicon-user"></span></a></li>
       </ul>
-    </div>
-  </div>
-
-  <!-- Modal -->
-  <div class="modal fade" id="myModal" role="dialog">
-    <div class="modal-dialog">
-
-      <!-- Modal content-->
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4 class="modal-title">Ahora puedes logearte...</h4>
-        </div>
-        <div class="modal-body">
-          <h1>Facebook login</h1>
-          <a href="#" id="login" class="btn btn-primary">Iniciar sesión con Facebbok</a>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        </div>
-      </div>
-
     </div>
   </div>
 </nav>
@@ -98,7 +77,7 @@
 
   <ul class="nav nav-tabs">
     <li class="active"><a data-toggle="tab" href="#home">Home</a></li>
-    <li><a data-toggle="tab" href="#menu1">Espacios</a></li>
+    <li><a data-toggle="tab" href="#menu1" id="openMap">Espacios</a></li>
   </ul>
 
   <div class="tab-content">
@@ -111,7 +90,7 @@
                  <!-- espacio 1 -->
                   <div class="col-sm-6 col-md-4">
     <div class="thumbnail">
-      <img src="..." alt="...">
+      <!-- <img src="..." alt="..."> -->
       <div class="caption">
         <h3>Thumbnail label</h3>
         <p>...</p>
@@ -122,7 +101,7 @@
                 <!-- espacio 2 -->
                  <div class="col-sm-6 col-md-4">
     <div class="thumbnail">
-      <img src="..." alt="...">
+      <!-- <img src="..." alt="..."> -->
       <div class="caption">
         <h3>Thumbnail label</h3>
         <p>...</p>
@@ -133,7 +112,7 @@
                  <!-- espacio 3 -->
                   <div class="col-sm-6 col-md-4">
     <div class="thumbnail">
-      <img src="..." alt="...">
+      <!-- <img src="..." alt="..."> -->
       <div class="caption">
         <h3>Thumbnail label</h3>
         <p>...</p>
@@ -152,53 +131,59 @@
       <h3>Espacios</h3>
       <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 
-            <div class="row">
-          <div class="container">
-              <div class="col-md-8">
+<div class="row">
+   <div class="container">
+        <div class="col-md-8 fotos">
                  <!-- espacio 1 -->
-                  <div class="col-sm-6 col-md-2.5">
+<div class="col-sm-6 col-md-6">
     <div class="thumbnail">
-      <img src="..." alt="...">
+      <img src="img/paisaje1.jpg" alt="paisaje1" class="paisaje">
       <div class="caption">
-        <h3>Thumbnail label</h3>
-        <p>...</p>
-        <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+        <h3>Paisaje 1</h3>
+        <p>Este es el paisaje...</p>
+
       </div>
     </div>
   </div>
                 <!-- espacio 2 -->
-                 <div class="col-sm-6 col-md-2.5">
+  <div class="col-sm-6 col-md-6">
     <div class="thumbnail">
-      <img src="..." alt="...">
+      <img src="img/paisaje1.jpg" alt="paisaje2" class="paisaje">
       <div class="caption">
-        <h3>Thumbnail label</h3>
-        <p>...</p>
-        <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+        <h3>Paisaje 2</h3>
+        <p>Este es el paisaje 2...</p>
       </div>
     </div>
   </div>
                  <!-- espacio 3 -->
-                  <div class="col-sm-6 col-md-2.5">
+  <div class="col-sm-6 col-md-6">
     <div class="thumbnail">
-      <img src="..." alt="...">
+      <img src="img/paisaje3.jpg" alt="paisaje3" class="paisaje">
       <div class="caption">
-        <h3>Thumbnail label</h3>
-        <p>...</p>
-        <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+        <h3>paisaje 3</h3>
+        <p>Este es el paisaje 3</p>
       </div>
     </div>
   </div>
-              </div>
+</div>
 
-    <div class="col-md-2">
-        <!-- Google Maps Integration -->
-        <div id="map" style="width:400px;height:400px;background:yellow"></div>
-    </div>
+<div id="space" class="modal">
+	<span id="close">&times;</span>
+	<div class="title">
+		<h2 class="titleh1">proyect title</h2>
+	</div>
+  <img class="modal-content" id="img01">
+	<div class="parrafomod">
+		<p class="p1"></p>
+		<button class="js-btclose btn btn-warning" value="close"><i class="fa fa-times"></i>Close</button>
+	</div>
+</div>
 
-          </div>
-
-
+<div class="col-md-2">
+  <div id="map"></div>
+</div>
       </div>
+    </div>
 
 
     </div>
@@ -209,16 +194,13 @@
     <footer class="container-fluid text-center">
       <p>Footer Text</p>
     </footer>
+          <!-- Google Maps integration -->
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="js/app.js" charset="utf-8"></script>
-    <script type="text/javascript">
-  (function(d, s, id){
-   var js, fjs = d.getElementsByTagName(s)[0];
-   if (d.getElementById(id)) {return;}
-   js = d.createElement(s); js.id = id;
-   js.src = "//connect.facebook.net/en_US/sdk.js";
-   fjs.parentNode.insertBefore(js, fjs);
- }(document, 'script', 'facebook-jssdk'));
-  </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="interact.js" charset="utf-8"></script>
+    <script src="espacios.js" charset="utf-8"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD2O0FTclPKjtSDYfiNkWPInx7mppOZmgs&callback=initMap"
+    async defer></script>
 </body>
 </html>
